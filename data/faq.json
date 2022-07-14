@@ -1,0 +1,39 @@
+[
+  {
+    "question": "¿Qué es embarazo de Alto Riesgo?",
+    "answer": "Es todo aquel embarazo que pone en riesgo la vida de la madre o del feto, podemos englobar varias enfermedades que pudieran ser causantes de este riesgo, entre las más frecuentes son: Diabetes Gestacional, Diabetes tipo 1 y 2, Hipertensión arterial (Preeclampsia), madre con alguna cardiopatía, Enfermedades Autoinmunes (Lupus eritematoso sistémico, Anticuerpos antifosfolipidos) Insuficiencia Renal, Epilepsia, Pérdida fetal recurrente, antecedentes de óbito fetal (muerte fetal previa), etc."
+  },
+  {
+    "question": "¿Qué se busca en la ecografía del primer trimestre o de tamizaje?",
+    "answer": "Búsqueda de varios marcadores ecográficos sugestivos de aneuploidías (alteraciones genéticas fetales como trisomías o monosomias) : Síndrome de Down (trisomía 21) Síndrome de Edwars (trisomía 18) Síndrome de Patau (trisomía 13) y Síndrome de Turner (X0), por mencionar algunos de los más frecuentes. Marcadores como: Translucencia Nucal, Hueso nasal, Ductus venoso, etc."
+  },
+  {
+    "question": "¿Para qué se realiza la ecografía estructral de las 18 a 24 semanas de gestación?",
+    "answer": "A esta edad se considera que el feto esta completamente desarrollado por lo que se indica la ecografía para corroborar que se haya dado correctamente su desarrollo y crecimiento. Consiste en un estudio minucioso sobre la anatomía fetal, donde valoramos el sistema nervioso fetal, estructuras cardiacas, organos internos, medición de huesos fetales, conteo de dedos en manos y pies, así como la confirmación del sexo fetal."
+  },
+  {
+    "question": "¿Para qué es el DNA fetal en sangre materna y que determina?",
+    "answer": "Es una prueba de tamizaje que se realiza por lo regular posterior a tener un resultado alterado en la ecografía del primer trimestre. Tiene alta sensibilidad para detectar alteraciones en los cromosomas fetales, es una prueba no invasiva a partir de una muestra de sangre materna y el resultado se obtiene en un lapso de 10 días. También logra confirmar a temprana edad el sexo fetal."
+  },
+  {
+    "question": "¿En qué consiste la nutrición fetal?",
+    "answer": "Es la combinación de alimentos y complementos nutricionales especiales durante el embarazo, obteniendo así un balance equilibrado en la ingesta de nutrientes con los requerimientos óptimos para el desarrrollo y crecimiento fetal."
+  },
+  {
+    "question": "¿Cuál es el momento óptimo para realizar una consulta preconcepcional?",
+    "answer": "De preferencia de 2 a 3 meses previos a buscar un embarazo y más aún si se cuenta con alguna enfermedad materna agregada, la cual pueda ameritar una atención médica especializada, esto brindará a la futura madre una mejor salud y obtendrá el éxito en la evolución de su embarazo."
+  },
+  {
+    "question": "¿Todas las mujeres deberan realizarse un papanicolaou?",
+    "answer": "Después de la primer relación sexual, es conveniente realizarlo cada año, en la búsqueda de cáncer de cérvix o bien identificar infecciones vaginales."
+  },
+  {
+    "question": "¿En qué consiste la consulta ginecológica?",
+    "answer": [
+      "Realización de ecografía pélvica abdominal y vaginal  para valoración de útero y ovarios.",
+      "Toma de Papanicolauo REQUISITO (3 días previos sin haber tenido relaciones sexuales).",
+      "Exploración manual de ambas glándulas mamarias para detectar masas o secreciones por pezón.",
+      "Interpretación de examenes de laboratorio de sangre y orina."
+    ]
+  }
+]

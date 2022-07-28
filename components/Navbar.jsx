@@ -37,11 +37,11 @@ const NavLink = (props) => (
           rounded={"md"}
           _hover={{
             textDecoration: "none",
-            bg: useColorModeValue("gray.200", "gray.700"),
+            bg: "gray.200",
           }}
           _active={{
             textDecoration: "none",
-            bg: useColorModeValue("gray.200", "gray.700"),
+            bg: "gray.200",
           }}
           fontWeight={navFontWeight}
         >
@@ -57,7 +57,7 @@ const NavLink = (props) => (
                   rounded={"md"}
                   _hover={{
                     textDecoration: "none",
-                    bg: useColorModeValue("gray.200", "gray.700"),
+                    bg: "gray.200",
                   }}
                 >
                   {capitalize(serv.titulo)}
@@ -78,7 +78,7 @@ const NavLink = (props) => (
           rounded={"md"}
           _hover={{
             textDecoration: "none",
-            bg: useColorModeValue("gray.200", "gray.700"),
+            bg: "gray.200",
           }}
           fontWeight={navFontWeight}
         >
@@ -94,7 +94,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue("teal.100", "teal.900")} px={4}>
+      <Box bg="teal.100" px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}

@@ -24,7 +24,7 @@ import { Wrap, WrapItem, Center, SimpleGrid, Heading, Text, UnorderedList, ListI
                 <Box >
                     <Heading size='md' textAlign="center" mb={4} color={"blue.400"}>Valores </Heading>
                         <UnorderedList>
-                            {valores.map(elem => <ListItem><Text color={'gray.500'} fontSize={'lg'}>{elem}</Text></ListItem> )}
+                            {valores.map((elem, idx) => <ListItem key={idx}><Text color={'gray.500'} fontSize={'lg'}>{elem}</Text></ListItem> )}
                         </UnorderedList>
                 </Box>
             </SimpleGrid>

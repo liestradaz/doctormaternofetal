@@ -14,7 +14,7 @@ export default function ServiciosGrid (){
         <Container maxW="5xl" my={6} >
             <Heading textAlign={"center"} mb={4} >Servicios</Heading>
             <SimpleGrid columns={{ base: 1, sm: 2, md: 2 }} spacing={10}>
-            {serviciosjson.map(elem => <ServiceCard title={elem.titulo} text={elem.descripcion} image={`${basePath}${elem.imagen}`} /> )}
+            {serviciosjson.map((elem, idx) => <ServiceCard key={idx} title={elem.titulo} text={elem.descripcion} image={`${basePath}${elem.imagen}`} /> )}
             
 </SimpleGrid>
         

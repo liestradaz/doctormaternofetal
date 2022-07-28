@@ -48,8 +48,8 @@ const NavLink = (props) => (
           Servicios <ChevronDownIcon />
         </MenuButton>
         <MenuList>
-          {serviciosjson.map((serv) => (
-            <MenuItem>
+          {serviciosjson.map((serv, idx) => (
+            <MenuItem key={idx}>
               <NextLink href={"/servicios/" + serv.titulo} passHref>
                 <Link
                   px={2}

@@ -44,7 +44,7 @@ export default function ContactForm(props) {
               <InputGroup>
                 <InputLeftElement
                   pointerEvents="none"
-                  children={<BsPerson color="gray.800" />}
+                  children={[<BsPerson color="gray.800" />]}
                 />
                 <Input
                   id="name"
@@ -61,7 +61,7 @@ export default function ContactForm(props) {
               <InputGroup>
                 <InputLeftElement
                   pointerEvents="none"
-                  children={<BsTelephone color="gray.800" />}
+                  children={[<BsTelephone color="gray.800" />]}
                 />
                 <Input
                   id="phone"
@@ -78,7 +78,7 @@ export default function ContactForm(props) {
               <InputGroup>
                 <InputLeftElement
                   pointerEvents="none"
-                  children={<MdOutlineEmail color="gray.800" />}
+                  children={[<MdOutlineEmail color="gray.800" />]}
                 />
                 <Input
                   id="email"

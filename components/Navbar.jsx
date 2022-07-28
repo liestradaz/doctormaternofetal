@@ -4,23 +4,22 @@ import {
   HStack,
   Link,
   IconButton,
-  Button,
-  Image,
   useDisclosure,
   useColorModeValue,
   Stack,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
-/* import logo from "../images/logo1.png"; */
-import NextLink from "next/link"
+import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import Image from "next/image";
+import logo from "../public/images/mmfg-logo.png";
+import NextLink from "next/link";
+import serviciosjson from "../data/servicios.json";
 
-const Links = [
-  "inicio",
-  "servicios",
-  "nosotros",
-  "preguntas",
-  "contacto",
-];
+const Links = ["inicio", "servicios", "nosotros", "preguntas", "contacto"];
+const navFontWeight = 600;
 
 function capitalize(str) {
   const lower = str.toLowerCase();
@@ -28,19 +27,66 @@ function capitalize(str) {
 }
 
 const NavLink = (props) => (
-  <NextLink href={props.link !== "inicio" ? "/" + props.link : "/"} passHref>
-    <Link
-      px={2}
-      py={1}
-      rounded={"md"}
-      _hover={{
-        textDecoration: "none",
-        bg: useColorModeValue("gray.200", "gray.700"),
-      }}
-    >
-      {capitalize(props.link)}
-    </Link>
-  </NextLink>
+  <>
+    {props.link === "servicios" ? (
+      <Menu>
+        <MenuButton
+          textAlign={"left"}
+          px={2}
+          py={1}
+          rounded={"md"}
+          _hover={{
+            textDecoration: "none",
+            bg: useColorModeValue("gray.200", "gray.700"),
+          }}
+          _active={{
+            textDecoration: "none",
+            bg: useColorModeValue("gray.200", "gray.700"),
+          }}
+          fontWeight={navFontWeight}
+        >
+          Servicios <ChevronDownIcon />
+        </MenuButton>
+        <MenuList>
+          {serviciosjson.map((serv) => (
+            <MenuItem>
+              <NextLink href={"/servicios/" + serv.titulo} passHref>
+                <Link
+                  px={2}
+                  py={1}
+                  rounded={"md"}
+                  _hover={{
+                    textDecoration: "none",
+                    bg: useColorModeValue("gray.200", "gray.700"),
+                  }}
+                >
+                  {capitalize(serv.titulo)}
+                </Link>
+              </NextLink>
+            </MenuItem>
+          ))}
+        </MenuList>
+      </Menu>
+    ) : (
+      <NextLink
+        href={props.link !== "inicio" ? "/" + props.link : "/"}
+        passHref
+      >
+        <Link
+          px={2}
+          py={1}
+          rounded={"md"}
+          _hover={{
+            textDecoration: "none",
+            bg: useColorModeValue("gray.200", "gray.700"),
+          }}
+          fontWeight={navFontWeight}
+        >
+          {capitalize(props.link)}
+        </Link>
+      </NextLink>
+    )}
+  </>
 );
 
 export default function Navbar() {
@@ -58,7 +104,9 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>{/* <Image src={logo} alt="Logo" htmlWidth="100px" /> */}</Box>
+            <Box>
+              <Image src={logo} alt={"logo"} width={50} height={50} />
+            </Box>
             <HStack
               as={"nav"}
               spacing={4}
@@ -72,10 +120,10 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
+          <Box maxW={"full"} pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link} link={link} />
+              {Links.map((link, idx) => (
+                <NavLink key={idx} link={link} />
               ))}
             </Stack>
           </Box>

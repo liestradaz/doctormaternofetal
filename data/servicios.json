@@ -1,0 +1,47 @@
+[
+    {
+        "titulo": "Consulta Obstétrica y Embarazo de Alto Riesgo",
+        "descripcion": "Todo embarazo que pone en riesgo la vida de la madre o del feto, podemos englobar varias enfermedades que puedieran ser causantes de este riesgo, entre las más frecuentes son: Diabetes gestacional, diabetes tipo 1 y 2, hipertensión arterial (preeclampsia), madre con alguna cardiopatía, enfermedades autoinmunes (Lupus eritematoso sistémico, anticuerpos antifosfolípidos), insuficiencia renal, epilepsia, pérdida fetal recurrente, antecedente de óbito fetal (muerte fetal previa), etc.",
+        "imagen": "consulta-obstetrica.jpg"
+    },
+    {
+        "titulo": "Ecografía de Primer Trimestre 11-14 semanas o de tamizaje",
+        "descripcion": "Se realiza idealmente a esta edad gestacional para buscar varios marcadores ecográficos sugestivos de Aneuploidías (alteraciones genéticas fetales) ya que desde temprana edad es posible realizar un cálculo de riesgo para presentar algunas alteraciones: Síndrome de Down (trisomía 21), Síndrome de Edwars (trisomía 18), Síndrome de Patau (trisomía 13) y Síndrome de Turner (X0). Se valora la Translucencia nucal, Hueso nasal, Ductus venoso, etc.",
+        "imagen": "eco-primer-trimestre.jpg"
+    },
+    {
+        "titulo": "Ecografía Estructural de las 18-24 semanas de gestación",
+        "descripcion": "Es un estudio minucioso sobre la anatomía del feto, corroborando su formación adecuada del sistema nervioso (cerebro), corazón, órganos internos, medición de todos sus huesos y conteo de los dedos en manos y pies, así como la confirmación del sexo fetal.",
+        "imagen": "eco-estructural.jpg"
+    },
+    {
+        "titulo": "Ecografía del Tercer Trimestre",
+        "descripcion": "Se realiza entre las 32-36 semanas de gestación, valorando la curva de crecimiento fetal, cantidad de líquido amniótico y flujometría Doppler multivasos. Este estudio revela el bienestar fetal y anticipa problemas del parto.",
+        "imagen": "tercer-trimestre.jpg"
+    },
+    {
+        "titulo": "Consulta Ginecológica",
+        "descripcion": "Esta consulta debe realizarse en toda mujer que inicia su vida sexual activa y previa a un futuro embarazo, donde practicamos un chequeo completo bajo ecografía de útero y ovarios, así como la toma de Papanicolaou y exploracion mamaria, en la detección oportuna de cáncer de cervix o de la glándula mamaria.",
+        "imagen": "consulta-ginecologica.jpg"
+    },
+    {
+        "titulo": "Duo test o Doble marcador bioquímico sérico",
+        "descripcion": "Se trata de un estudio en sangre materna donde se evalúan dos hormonas: la hormona gonadotrofina coriónica (HGC beta libre) y la proteína plasmática asociada al embarazo (PAPP-A), para determinar los riesgos de presentar S. Down, S. Edwars y S. Patau, por ser de las aneuploidías más frecuentes. Esto se combina con los hallazgos ecográficos fetales y así realizar con mayor precisión el cáculo de riesgo.",
+        "imagen": "duotest.jpg"
+    },
+    {
+        "titulo": "3D – 4D de Alta Definición",
+        "descripcion": "3D es la técnica de ecografía mediante la cual se realiza un escaneo del feto, obteniéndose imágenes de la cara fetal o bien de alguna otra estructura anatómica. La 4D se refiere a la técnica mediante un video en tiempo real captando imágenes tridimensionales durante los movimientos fetales. Mediante la aplicación (HD LIVE) mejora la definición de ambas técnicas.",
+        "imagen": "3d4dhd.png"
+    },
+    {
+        "titulo": "DNA Fetal en Sangre Materna",
+        "descripcion": "Es una prueba de tamizaje que se realiza por lo regular posterior a tener un resultado alterado en la ecografía del primer trimestre. Muestra alta sensibilidad para detectar alteraciones en los cromosomas fetales, la ventaja es que es una prueba no invasiva, basta con una muestra sanguínea de la madre y desde las 10 semanas de gestación puede practicarse, obteniéndose el resultado en un lapso de 10 días.",
+        "imagen": "dnafetal.jpg"
+    },
+    {
+        "titulo": "Amniocentesis Genética (Cariotipo Fetal)",
+        "descripcion": "Se trata de un procedimiento invasivo donde se extrae líquido amniótico desde la cavidad uterina, esto se realiza bajo guía ecográfica especializada. Su objetivo es realizar el diagnóstico cromosómico fetal mediante el cultivo de las células fetales que se encuentran en el líquido amniótico. Brinda gran información sobre la genética fetal, ayudando a la toma de decisiones y al tratamiento fetal si fuera necesario.",
+        "imagen": "amniocentesis.png"
+    }
+]

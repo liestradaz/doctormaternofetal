@@ -54,17 +54,22 @@ export default function ContactFormBox(props) {
                           </Text>
                           <HStack alignItems="flex-start">
                             <Icon as={MdPhone} mt={1} />
-                            <Text mt={{ sm: 3, md: 3, lg: 5 }}>
-                              33 2257 9557
+                            <VStack pt={0}>
+                            <Text >
+                            33 1984 1625
                             </Text>
+                            <Text mt={{ sm: 3, md: 3, lg: 5 }}>
+                            33 3685 9362
+                            </Text>
+                            </VStack>
                           </HStack>
                           <HStack alignItems="flex-start">
                             <Icon as={MdEmail} mt={1} />
                             <Link
-                              href="mailto:clinicmarketgdl@hotmail.com"
+                              href="mailto:hola@doctormaternofetal.com"
                               isExternal
                             >
-                              <Text>clinicmarketgdl@hotmail.com</Text>
+                              <Text>hola@doctormaternofetal.com</Text>
                             </Link>
                           </HStack>
                           <HStack alignItems="flex-start">
@@ -116,7 +121,7 @@ export default function ContactFormBox(props) {
                 </Wrap>
               </VStack>
               <Box bg="white" borderRadius="lg">
-                <ContactForm />
+                {/* <ContactForm /> */}
               </Box>
             </Box>
           </Box>

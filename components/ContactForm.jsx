@@ -12,18 +12,16 @@ import {
   Textarea,
   Alert,
   AlertIcon,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { BsPerson, BsTelephone } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
-
 
 export default function ContactForm(props) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
 
   const nameInputHandler = (event) => setName(event.target.value);
   const phoneInputHandler = (event) => setPhone(event.target.value);
@@ -33,19 +31,14 @@ export default function ContactForm(props) {
   return (
     <>
       <Box m={8} color="#0B0E3F">
-        <form
-          action=""
-          onSubmit=""
-          method="POST"
-        >
+        <form action="" onSubmit="" method="POST">
           <VStack spacing={3}>
             <FormControl isRequired>
               <FormLabel htmlFor="name">Nombre</FormLabel>
               <InputGroup>
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={[<BsPerson color="gray.800" />]}
-                />
+                <InputLeftElement pointerEvents="none">
+                  <BsPerson color="gray.800" />
+                </InputLeftElement>
                 <Input
                   id="name"
                   name="name"
@@ -59,10 +52,9 @@ export default function ContactForm(props) {
             <FormControl isRequired>
               <FormLabel htmlFor="phone">Teléfono</FormLabel>
               <InputGroup>
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={[<BsTelephone color="gray.800" />]}
-                />
+                <InputLeftElement pointerEvents="none">
+                  <BsTelephone color="gray.800" />
+                </InputLeftElement>
                 <Input
                   id="phone"
                   name="phone"
@@ -76,10 +68,9 @@ export default function ContactForm(props) {
             <FormControl isRequired>
               <FormLabel htmlFor="email">Correo electrónico</FormLabel>
               <InputGroup>
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={[<MdOutlineEmail color="gray.800" />]}
-                />
+                <InputLeftElement pointerEvents="none">
+                  <MdOutlineEmail color="gray.800" />
+                </InputLeftElement>
                 <Input
                   id="email"
                   type="email"
@@ -94,19 +85,15 @@ export default function ContactForm(props) {
             <FormControl isRequired>
               <FormLabel htmlFor="message">Mensaje</FormLabel>
               <Textarea
-              id="message"
-              name="message"
+                id="message"
+                name="message"
                 size="md"
                 value={message}
                 onChange={messageInputHandler}
               />
             </FormControl>
 
-            <Button
-              type="submit"
-              colorScheme="blue"
-              rounded={"full"}
-            >
+            <Button type="submit" colorScheme="blue" rounded={"full"}>
               Enviar Mensaje
             </Button>
             {/* {state.succeeded && <>

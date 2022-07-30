@@ -37,7 +37,7 @@ export default function Footer() {
               </HStack>
               <HStack alignItems="flex-start">
                 <Icon as={AiOutlineWhatsApp} mt={1} />
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} >3329171402</Text>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} >33 2917 1402</Text>
               </HStack>
               <Box as="center" mt={4}>
                 <NextLink
@@ -58,6 +58,14 @@ export default function Footer() {
                 Av. Chapalita 1373 Col. Chapalita, Guadalajara Jalisco México
                 C.P. 44500 Cruce con Av. Las Rosas.
               </Text>
+              <NextLink
+                  href="/privacidad"
+                  passHref
+                >
+                  <Link>
+                    <Text fontSize={"xs"}>Aviso de Privacidad</Text> 
+                  </Link>
+                </NextLink>
             </Stack>
             <Stack align={"center"}>
               <Container maxW="xs" borderRadius="lg" centerContent>

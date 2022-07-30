@@ -9,6 +9,7 @@ export default function Preguntas() {
         <>
             <Head>
                 <title>Preguntas Frecuentes</title>
+                <link rel="icon" type="image/png" href="/mmfg-logo.png" />
             </Head>
             <Faq />
         </>

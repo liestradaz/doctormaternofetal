@@ -6,7 +6,8 @@ import {
   Heading,
   Container,
   Link,
-  Center
+  Center,
+  border
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import Image from "next/image";
@@ -17,13 +18,14 @@ export default function ServiceCard(props) {
   return (
     <Container maxW="md" borderRadius="lg" p={4}>
       <HStack align="center" p={1} h={"4xs"}>
-        <Flex align={"center"} justify={"center"}>
+        <Flex align={"center"} justify={"center"} borderRadius={"50%"} border={"4px"} color={"teal.200"} >
           <Image
             src={image}
             alt={title}
             width={100}
             height={100}
-            style={{ borderRadius: "50%" }}
+            objectFit="cover"
+            style={{ borderRadius: "50%"}}
           />
         </Flex>
         <Flex w={"70%"}>

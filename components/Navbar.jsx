@@ -11,6 +11,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import Image from "next/image";
@@ -28,8 +29,9 @@ function capitalize(str) {
 
 const NavLink = (props) => (
   <>
+  {/* Link for "servicios" Menu */}
     {props.link === "servicios" ? (
-      <Menu>
+      <Menu matchWidth>
         <MenuButton
           textAlign={"left"}
           px={2}
@@ -47,9 +49,9 @@ const NavLink = (props) => (
         >
           Servicios <ChevronDownIcon />
         </MenuButton>
-        <MenuList>
+        <MenuList >
           {serviciosjson.map((serv, idx) => (
-            <MenuItem key={idx}>
+            <MenuItem key={idx} >
               <NextLink href={"/servicios/" + serv.titulo} passHref>
                 <Link
                   px={2}
@@ -59,8 +61,9 @@ const NavLink = (props) => (
                     textDecoration: "none",
                     bg: "gray.200",
                   }}
+                  overflow="hidden"
                 >
-                  {capitalize(serv.titulo)}
+                  <Text fontSize={"md"} noOfLines={3} >{capitalize(serv.titulo)}</Text> 
                 </Link>
               </NextLink>
             </MenuItem>
@@ -68,6 +71,7 @@ const NavLink = (props) => (
         </MenuList>
       </Menu>
     ) : (
+      /* Links for navbar items */
       <NextLink
         href={props.link !== "inicio" ? "/" + props.link : "/"}
         passHref
@@ -94,7 +98,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg="teal.100" px={4}>
+      <Box bg="teal.100" px={4} w={"100%"}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -120,8 +124,8 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
-          <Box maxW={"full"} pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
+          <Box /* maxW={"100vh"} */ pb={4} display={{ md: "none" }}>
+            <Stack as={"nav"} spacing={4}  w={"full"}  >
               {Links.map((link, idx) => (
                 <NavLink key={idx} link={link} />
               ))}

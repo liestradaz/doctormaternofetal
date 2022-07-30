@@ -7,6 +7,7 @@ export default function Contacto() {
         <>
             <Head>
                 <title>Contacto</title>
+                <link rel="icon" type="image/png" href="/mmfg-logo.png" />
             </Head>
             <ContactFormBox />
         </>

@@ -16,6 +16,7 @@ export default function Contacto() {
         <>
             <Head>
                 <title>Nosotros</title>
+                <link rel="icon" type="image/png" href="/mmfg-logo.png" />
             </Head>
             <UsBanner/>
             <Wrap justify='center' my={10}>
